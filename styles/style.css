@@ -48,10 +48,16 @@
     transition: right 0.27s ease-in;
 }
 
-#bar-menu {
+.menu-container {
     position: absolute;
-    top: 0;
-    right: 2%;
+    right: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#bar-menu {
     background-color: transparent;
     height: 100%;
     padding: 10px 5px;
@@ -415,13 +421,22 @@ footer {
     }
 
     #bar-menu {
-        position: absolute;
         display: flex;
         font-size: 2.6em;
         cursor: pointer;
-        z-index: 3;
+        z-index: 1;
     }
-    
+
+    .menu-container {
+        position: absolute;
+        right: 1%;
+    }
+
+    .aux-div.show ~ .menu-container #bar-menu {
+        opacity: 0;
+        pointer-events: none;
+    }
+
     .aux-div {
         position: fixed;
         top: 0%;
@@ -432,7 +447,7 @@ footer {
         justify-content: start;
         width: clamp(min(220px, 240px), 59%, 400px);
         height: 100%;
-        z-index: 2;
+        z-index: 3;
         transition: .3s ease-in;
     }
 
@@ -448,7 +463,8 @@ footer {
         z-index: 1;
     }
 
-    .container-nav.show, .aux-div.show {
+    .container-nav.show,
+    .aux-div.show {
         right: 0%;
     }
 
@@ -498,7 +514,7 @@ footer {
     .btn-a {
         position: relative;
         top: 5%;
-        left: -17%;
+        left: 0%;
         z-index: 1;
     }
 
@@ -515,16 +531,11 @@ footer {
 @media (max-width: 640px) {
     .btn-a {
         position: relative;
-        left: -16%;
+        left: 0%;
     }
 }
 
-@media (max-width: 600px) {
-    .btn-a {
-        position: relative;
-        left: -14%;
-    }
-}
+@media (max-width: 600px) {}
 
 @media (max-width: 500px) {
     .nav-title {
@@ -532,9 +543,9 @@ footer {
     }
 
     .btn-a {
-        position: relative;
-        /* top: -3%; */
-        left: -12%;
+        position: absolute;
+        top: 3%;
+        left: 0%;
         z-index: 1;
     }
 
@@ -560,7 +571,7 @@ footer {
         width: 101%;
         transition: all 0.27s ease-in;
     }
-    
+
     ul li:nth-child(3):hover {
         transform: scale(1.2, 1.1) translate(0, -20px);
         padding: auto 30px;
