@@ -498,7 +498,7 @@ footer {
     .btn-a {
         position: relative;
         top: 5%;
-        left: -17%;
+        left: 0%;
         z-index: 1;
     }
 
@@ -515,15 +515,11 @@ footer {
 @media (max-width: 640px) {
     .btn-a {
         position: relative;
-        left: -16%;
+        left: 0%;
     }
 }
 
 @media (max-width: 600px) {
-    .btn-a {
-        position: relative;
-        left: -14%;
-    }
 }
 
 @media (max-width: 500px) {
@@ -532,9 +528,9 @@ footer {
     }
 
     .btn-a {
-        position: relative;
-        /* top: -3%; */
-        left: -12%;
+        position: absolute;
+        top: 3%;
+        left: 0%;
         z-index: 1;
     }
 
