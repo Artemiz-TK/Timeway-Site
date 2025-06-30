@@ -470,7 +470,7 @@ footer {
         flex-direction: column;
         justify-content: start;
         width: clamp(min(220px, 240px), 59%, 400px);
-        height: 100%;
+        height: 120dvh;
         z-index: 3;
         transition: .3s ease-in;
     }
