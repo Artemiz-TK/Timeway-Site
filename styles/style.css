@@ -566,9 +566,13 @@ footer {
         left: 0%;
     }
 
+    .container-nav {
+        height: 77%;
+    }
+
     .links {
         transform: scale(1.2, 1.1) translate(0, -20px);
-        width: 101%;
+        width: 100%;
         transition: all 0.27s ease-in;
     }
 
