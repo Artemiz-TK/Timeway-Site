@@ -470,7 +470,7 @@ footer {
         flex-direction: column;
         justify-content: start;
         width: clamp(min(220px, 240px), 59%, 400px);
-        height: 100%;
+        height: 110dvh;
         z-index: 3;
         transition: .3s ease-in;
     }
@@ -480,7 +480,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 60%;
+        height: 50%;
         top: 0%;
         width: 100%;
         right: -100%;
