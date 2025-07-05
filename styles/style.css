@@ -457,6 +457,22 @@ footer {
         right: 1%;
     }
 
+    .fade-div {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.723);
+        width: 100dvw;
+        height: 110dvh;
+        bottom: 0;
+        top: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: .7s ease-in-out;
+    }
+
+    .fade-div.show {
+        opacity: 1;
+    }
+
     .aux-div.show ~ .menu-container #bar-menu {
         opacity: 0;
         pointer-events: none;
