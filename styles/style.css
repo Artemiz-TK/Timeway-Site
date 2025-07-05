@@ -518,7 +518,7 @@ footer {
     #bar-close {
         --primary: rgba(167, 167, 167, 0.389);
         position: absolute;
-        left: 83%;
+        left: 86%;
         top: 2.7%;
         font-size: 2.7em;
         color: var(--primary);
