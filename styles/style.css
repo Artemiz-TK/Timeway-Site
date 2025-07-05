@@ -527,6 +527,8 @@ footer {
     }
 
     .container-nav ul {
+        position: relative;
+        top: 2em;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
