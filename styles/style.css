@@ -140,6 +140,7 @@
     transform-origin: left;
     transition: 0.29s ease-in;
     z-index: 1;
+    overflow: hidden;
 }
 
 .btn::after {
@@ -157,7 +158,7 @@
 }
 
 .btn:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(1.2);
     z-index: -1;
 }
 
@@ -448,12 +449,28 @@ footer {
         display: flex;
         font-size: 2.6em;
         cursor: pointer;
-        z-index: 1;
+        z-index: 3;
     }
 
     .menu-container {
         position: absolute;
         right: 1%;
+    }
+
+    .fade-div {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.723);
+        width: 100dvw;
+        height: 110dvh;
+        bottom: 0;
+        top: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: .7s ease-in-out;
+    }
+
+    .fade-div.show {
+        opacity: 1;
     }
 
     .aux-div.show ~ .menu-container #bar-menu {
@@ -471,8 +488,8 @@ footer {
         justify-content: start;
         width: clamp(min(220px, 240px), 59%, 400px);
         height: 110dvh;
-        z-index: 3;
-        transition: .3s ease-in;
+        z-index: 4;
+        transition: .7s ease-in-out;
     }
 
     .container-nav {
@@ -484,7 +501,7 @@ footer {
         top: 0%;
         width: 100%;
         right: -100%;
-        z-index: 1;
+        z-index: 2;
     }
 
     .container-nav.show,
@@ -501,7 +518,7 @@ footer {
     #bar-close {
         --primary: rgba(167, 167, 167, 0.389);
         position: absolute;
-        left: 83%;
+        left: 86%;
         top: 2.7%;
         font-size: 2.7em;
         color: var(--primary);
@@ -510,6 +527,8 @@ footer {
     }
 
     .container-nav ul {
+        position: relative;
+        top: 2em;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -537,8 +556,8 @@ footer {
 
     .btn-a {
         position: relative;
-        top: 5%;
-        left: 0%;
+        top: 8%;
+        left: -2%;
         z-index: 1;
     }
 
@@ -553,9 +572,21 @@ footer {
 }
 
 @media (max-width: 640px) {
+    #bar-close {
+        position: absolute;
+        top: 3%;
+        bottom: 0%;
+        left: 82%;
+    }
+
     .btn-a {
         position: relative;
-        left: 0%;
+        top: 8%;
+        left: -2%;
+    }
+
+    .nav-title {
+        font-size: 2.09em;
     }
 }
 
@@ -565,8 +596,8 @@ footer {
     }
 
     .btn-a {
-        top: 3%;
-        left: 0%;
+        top: 8%;
+        left: -4%;
         z-index: 1;
     }
 
