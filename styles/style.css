@@ -620,11 +620,13 @@ footer {
 
     .btn-a {
         position: relative;
-        left: 0%;
+        top: 13%;
+        left: -3%;
     }
 
-    .container-nav {
-        height: 77%;
+    .nav-title {
+        left: 1%;
+        font-size: 1.35em;
     }
 
     .links {
