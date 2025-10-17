@@ -128,7 +128,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: "Silkscreen", sans-serif;
     padding: 10px 15px;
     background-color: transparent;
@@ -209,12 +209,16 @@ footer {
 
     .container-nav ul {
         width: 70%;
-        left: 16%;
+        left: 14%;
     }
 
     .btn-a {
         position: relative;
         left: 20%;
+    }
+
+    .links {
+        font-size: 1.3em;
     }
 }
 
@@ -303,7 +307,7 @@ footer {
     }
 
     .links {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .btn-a {
@@ -326,7 +330,7 @@ footer {
     }
 
     .links {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     .btn-a {
@@ -349,7 +353,7 @@ footer {
     }
 
     .links {
-        font-size: 1.4em;
+        font-size: 1.18em;
     }
 
     .btn-a {
@@ -375,7 +379,7 @@ footer {
     }
 
     .links {
-        font-size: 1.4em;
+        font-size: 1.16em;
     }
 
     .btn-a {
@@ -401,7 +405,7 @@ footer {
     }
 
     .links {
-        font-size: 1.3em;
+        font-size: 1.15em;
     }
 
     .btn-a {
@@ -427,7 +431,7 @@ footer {
     }
 
     .links {
-        font-size: 1.2em;
+        font-size: 1.13em;
     }
 
     .btn-a {
@@ -486,22 +490,27 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        width: clamp(min(220px, 240px), 59%, 400px);
+        width: clamp(min(220px, 240px), 45%, 400px);
         height: 110dvh;
         z-index: 4;
         transition: .7s ease-in-out;
     }
 
     .container-nav {
-        background-color: #000;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 50%;
+        height: 70%;
         top: 0%;
+        left: 100%;
         width: 100%;
-        right: -100%;
         z-index: 2;
+    }
+
+    .container-nav:has(ul, a) {
+        position: relative;
+        left: -25%;
     }
 
     .container-nav.show,
@@ -518,8 +527,8 @@ footer {
     #bar-close {
         --primary: rgba(167, 167, 167, 0.389);
         position: absolute;
-        left: 86%;
-        top: 2.7%;
+        left: 107%;
+        top: 2%;
         font-size: 2.7em;
         color: var(--primary);
         cursor: pointer;
@@ -574,14 +583,22 @@ footer {
 @media (max-width: 640px) {
     #bar-close {
         position: absolute;
-        top: 3%;
-        left: 82%;
+        left: 98%;
     }
 
     .btn-a {
         position: relative;
         top: 8%;
         left: -2%;
+    }
+
+    .container-nav:has(ul, a) {
+        position: relative;
+        left: -17%;
+    }
+
+    .aux-div {
+        width: clamp(min(220px, 280px), 49%, 400px);
     }
 
     .nav-title {
@@ -596,8 +613,17 @@ footer {
 
     #bar-close {
         position: absolute;
-        left: 80%;
+        left: 95%;
         top: 3%;
+    }
+
+        .container-nav:has(ul, a) {
+        position: relative;
+        left: -17%;
+    }
+
+    .aux-div {
+        width: clamp(min(220px, 280px), 50%, 400px);
     }
 
     .btn-a {
