@@ -644,17 +644,29 @@ footer {
         top: 3%;
     }
 
-    .btn-a {
-        position: relative;
-        top: 13%;
-        left: -3%;
-    }
-
+    
     .fade-div {
         width: 130dvw;
         height: 130dvh;
     }
+    
+    .container-nav {
+        position: relative;
+        height: 40%;
+    }
 
+    .btn-a {
+        
+        position: absolute;
+        top: 93%;
+        left: 0%;
+    }
+
+    .container-nav:has(ul, a) {
+        justify-content: space-evenly;
+        top: 0%;
+    }
+    
     .aux-div {
         height: 130dvh;
         width: clamp(min(200px, 230px), 60%, 350px);
