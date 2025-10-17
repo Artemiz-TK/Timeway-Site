@@ -656,10 +656,9 @@ footer {
     }
 
     .btn-a {
-        
-        position: absolute;
-        top: 93%;
-        left: 0%;
+        position: relative;
+        top: 10%;
+        left: -3%;
     }
 
     .container-nav:has(ul, a) {
