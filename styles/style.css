@@ -617,7 +617,7 @@ footer {
         top: 3%;
     }
 
-        .container-nav:has(ul, a) {
+    .container-nav:has(ul, a) {
         position: relative;
         left: -17%;
     }
